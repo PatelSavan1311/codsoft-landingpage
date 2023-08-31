@@ -1,0 +1,295 @@
+/* section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(gym1.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center;
+   
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    line-height: 1.7rem;
+    /* background: linear-gradient(to right, rgb(99, 46, 102), rgb(142, 134, 134), rgb(84, 6, 110)); */
+    background: url(gym1.jpg) ;
+}
+
+h1,h2,h3,h4,h5 {
+    line-height: 1.2;
+ }
+ h1{
+     font-size: 2.4rem;
+ }
+ h2{
+     font-size: 2rem;
+ }
+ h3{
+     font-size: 1.6rem;
+ }
+ h4{
+     font-size: 1.3rem;
+ }
+ 
+ a{
+     color: var(--color-white);
+ }
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+
+
+
+
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    
+}
+nav h4{
+    font-size: 30px;
+}
+
+/* Navbar */
+.window-scroll{
+    background: grey;
+    box-shadow: 0 1rem 2rem rgba(208, 200, 200, 0.2);
+}
+
+.nav_container{
+    height: 100%;
+    color: white;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_container .pic {
+    margin-left: 4rem;
+}
+
+.nav_container .logo {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+
+
+nav button{
+    display: none;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 4rem;
+
+}
+
+.nav_menu a{
+    font-size: 0.9rem;
+    transition: all 400ms ease;
+    text-decoration: none;
+}
+
+.nav_menu a:hover{
+    color: blue;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+.content {
+    margin-top: 7rem;
+}
+
+.content .info {
+    border: 3px solid black;
+    border-radius: 12px;
+    width: 60rem;
+    margin-left: 11rem;
+    background: rgb(183, 174, 174);
+}
+
+.content .info h2{
+    margin-left: 20rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+} 
+
+.content .info p .sp1 {
+    margin-left: 17rem;
+    font-size: 1.7rem;
+}
+
+.content .info p .sp2 {
+    border: 5px solid black;
+}
+
+.content .info .btn {
+    font-size: 18px;
+    margin: 2rem 0 2rem 25rem;
+    background: black;
+    color: white;
+    width: 7rem;
+    height: 2rem;
+    border: navajowhite;
+    cursor: pointer;
+}
+
+.content .info .btn:hover{
+    background: grey;
+    border: 2px solid rgb(81, 77, 77);
+}
+
+.hero {
+    border: 3px solid black;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 15rem;
+    background: rgb(183, 174, 174);
+}
+
+.hero p {
+    margin-left: 8rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+
+.hero .btn {
+    font-size: 18px;
+    margin: 1rem  0 2rem 17rem;
+    background: black;
+    color: white;
+    width: 7rem;
+    height: 2rem;
+    border: navajowhite;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background: grey;
+    border: 2px solid rgb(81, 77, 77);
+}
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+
+.features img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+
+.feature {
+    border: 2px solid black;
+    display: flex;
+    gap: 3rem;
+    width: 97%;
+    margin-left: 1.5rem;
+    margin-bottom: 9rem;
+    background: rgb(95, 85, 85);
+}
+
+.feature h2 {
+    margin: 3rem 0 2rem 12rem;
+}
+
+.feature .main {
+    border: 3px solid blue;
+    margin: 2rem 2rem 4rem 2rem;
+    background-color: rgb(154, 145, 145);
+    
+}
+
+.feature .main ul{
+    margin: 3rem 3rem 0 3rem;
+    border: 2px solid black;
+    height: 77%;
+    border-radius: 17px;
+    background: linear-gradient(to right, rgb(224, 213, 213), rgb(142, 134, 134), rgb(79, 73, 73));
+}
+
+.feature ul li {
+    margin: 3rem 0 2rem 2rem;
+    
+}
+
+
+footer {
+    border: 3px solid black;
+    border-radius: 9px;
+    height: 18rem;
+    width: 50%;
+    margin: 4rem auto 0 auto;
+    background: linear-gradient(to right, rgb(142, 134, 134), rgb(79, 73, 73));
+}
+
+footer p {
+    margin: 0rem 0 0 11rem;
+    color: rgb(14, 14, 49);
+}
+
+footer .ic {
+    margin: 2rem 0 3rem 12rem;
+    font-size: 3rem;
+}
+
+footer .ic a{
+    margin: 0 2rem 0 1rem;
+}
+
+footer p  span {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
